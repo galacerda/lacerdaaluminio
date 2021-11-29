@@ -10,7 +10,7 @@ const headingModifiers = {
     &::after {
       content: "";
       width: 80%;
-      border: 0.1rem solid ${defaultTheme.colors.yellow};
+      border: 0.2rem solid ${defaultTheme.colors.yellow};
     }
     display: flex;
     flex-direction: column;

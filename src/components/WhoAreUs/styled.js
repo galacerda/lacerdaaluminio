@@ -12,8 +12,17 @@ export const Content = styled.div``;
 
 export const Description = styled.div`
   padding: 5rem 0;
-  width: 70%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   p {
     font-size: 1.8rem;
+  }
+  img{
+    border-radius: 0.5rem;
+    -webkit-box-shadow: 12px 10px 16px -5px rgba(179,179,179,1);
+-moz-box-shadow: 12px 10px 16px -5px rgba(179,179,179,1);
+box-shadow: 12px 10px 16px -5px rgba(179,179,179,1);
   }
 `;

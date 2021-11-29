@@ -8,7 +8,7 @@ const houseBg = "/img/houseBg.jpg";
 export const Wrapper = styled.div``;
 
 export const HeaderContact = styled.div`
-  background-color: ${defaultTheme.colors.blue};
+  background-color: ${defaultTheme.colors.black};
   padding: 2rem 3rem;
   display: flex;
   span {
@@ -29,7 +29,7 @@ export const HeaderContact = styled.div`
 `;
 
 export const WrapperLogo = styled.div`
-  padding: 7rem 0 3rem 0;
+  padding: 10rem 0 5rem 0;
 `;
 
 export const CarouselWrapper = styled.div`
@@ -55,7 +55,7 @@ export const CarouselWrapper = styled.div`
 
 export const BudgetWrapper = styled.div`
   padding: 3rem;
-  background-color: ${defaultTheme.colors.blue};
+  background-color: ${defaultTheme.colors.black};
   display: flex;
   align-items: center;
   justify-content: center;

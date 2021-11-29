@@ -9,6 +9,10 @@ import BudgetForm from "../../components/BudgetForm";
 
 import { useEffect } from "react";
 import Slider from "../../components/Slider";
+import Workers from "../../components/Workers";
+import Footer from "../../components/Footer";
+
+const solding = "/img/solding.svg";
 
 const mailIcon = "/img/mailIcon.svg";
 const logo = "/img/luminiumLogo.svg";
@@ -16,10 +20,6 @@ export default function Home() {
   return (
     <S.Wrapper>
       <div>
-        <S.HeaderContact>
-          <S.MailIcon />
-          <span>contato_lacerda-aluminio.com</span>
-        </S.HeaderContact>
         <S.CarouselWrapper>
           <S.WrapperLogo>
             <img src={logo} />
@@ -43,13 +43,16 @@ export default function Home() {
           </S.ButtonWrapper>
         </S.CarouselWrapper>
       </div>
+      <Workers />
       <S.MoreAbout>
         <Heading lineBottom>Saiba mais sobre a nossa empresa</Heading>
       </S.MoreAbout>
       <OurServices />
-      <SectionImage image="/img/yellowBg.svg" />
+      <SectionImage img="/img/yellowBg.svg" fixed />
       <WhoAreUs />
+      <SectionImage img={solding} />
       <BudgetForm />
+      <Footer />
     </S.Wrapper>
   );
 }

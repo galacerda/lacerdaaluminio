@@ -75,6 +75,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     body {
+      background-color: white;
       font-family: "Poppins";
       font-size: 1.6rem;
    }

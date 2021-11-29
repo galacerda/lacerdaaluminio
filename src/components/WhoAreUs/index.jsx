@@ -1,6 +1,8 @@
 import * as S from "./styled";
 import Heading from "../Heading";
 
+const handshakeImg = '/img/handshake.jpg';
+
 const WhoAreUs = () => {
   return (
     <S.Wrapper>
@@ -15,6 +17,7 @@ const WhoAreUs = () => {
             como também superando suas expectativas. Acreditamos que sempre
             podemos ir além do esperado, e nos superarmos em cada novo projeto!
           </p>
+          <img src={handshakeImg} alt="Dois homens apertando as mãos" />
         </S.Description>
       </S.Content>
     </S.Wrapper>
