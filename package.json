@@ -28,9 +28,6 @@
     "yup": "^0.32.11"
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.13.2",
-    "eslint": "7.30.0",
-    "eslint-config-next": "11.0.1",
-    "styled-media-query": "^2.1.2"
+    "babel-plugin-styled-components": "^1.13.2"
   }
 }
