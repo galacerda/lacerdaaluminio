@@ -3,9 +3,11 @@ import TextField from "@material-ui/core/TextField";
 import { defaultTheme } from "../../styles/defaultTheme";
 import media from "styled-media-query";
 export const Wrapper = styled.main`
-  display: flex;
-  flex-direction: column;
-  min-height: 9rem;
+  ${({ type }) => css`
+    display: flex;
+    flex-direction: column;
+    min-height: ${type === "textarea" ? "20rem" : "9rem"};
+  `}
 `;
 
 export const Label = styled.label``;
@@ -30,6 +32,9 @@ export const Input = styled(TextField)`
     }
     .MuiInputBase-root {
       font-size: 1.6rem;
+      ${media.lessThan("medium")`
+        font-size: 1.4rem;
+      `}
     }
     .MuiOutlinedInput-input {
       padding: ${type !== "textarea" && "1.6rem 1.4rem"};

@@ -29,6 +29,8 @@ export const Form = styled.form`
   ${media.lessThan("medium")`
       width:100%;
       margin:3rem 0;
+      padding: 2rem;
+      height: auto;
   `}
 `;
 
@@ -41,6 +43,10 @@ export const Line = styled.div`
   display: grid;
   grid-template-columns: 55% auto;
   gap: 2rem;
+  ${media.lessThan("medium")`
+     grid-template-columns: 100%;
+     gap: 0;
+  `}
 `;
 
 export const ButtonWrapper = styled.div`

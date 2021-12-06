@@ -9,7 +9,7 @@ const Input = ({
   onChange,
 }) => {
   return (
-    <S.Wrapper>
+    <S.Wrapper type={type}>
       {type === "textarea" ? (
         <S.Input
           variant="outlined"

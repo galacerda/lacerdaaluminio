@@ -13,6 +13,8 @@ export const Wrapper = styled.a`
   justify-content: center;
   cursor: pointer;
   z-index: 3;
+  -webkit-box-shadow: 2px 6px 6px -2px rgba(0, 0, 0, 0.42);
+  box-shadow: 2px 6px 6px -2px rgba(0, 0, 0, 0.42);
 `;
 
 export const WhatsAppLogo = styled.img`

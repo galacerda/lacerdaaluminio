@@ -70,10 +70,9 @@ export const CarouselWrapper = styled.div`
   span {
     font-family: "Poppins";
   }
-  ${media.lessThan("1600px")`
-    padding-bottom: 10rem;
-  `}
+
   ${media.lessThan("medium")`
+    padding:0 2rem;
     height: 95vh;
   `}
 `;
