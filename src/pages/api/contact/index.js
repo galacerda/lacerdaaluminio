@@ -1,6 +1,6 @@
 const sgMail = require("@sendgrid/mail");
 sgMail.setApiKey(process.env.NEXT_PUBLIC_SEND_GRID_API_KEY);
-console.log(process.env.NEXT_PUBLIC_SEND_GRID_API_KEY);
+
 export default async function sendEmail(req, res) {
   const actualDate = new Date();
   const msg = {
@@ -8,7 +8,7 @@ export default async function sendEmail(req, res) {
     from: process.env.NEXT_PUBLIC_USER_EMAIL_FROM,
     subject: `Orçamento - ${actualDate.toLocaleDateString("pt-BR")}`,
     text: "Um novo orçamento foi solicitado!",
-    html: `<p>${req.body.name}<p>`,
+    html: `<h3>Nome:</h3><span>${req.body.name}</span><br><h3>Email:</h3><span>${req.body.email}</span><br><h3>Telefone:</h3><span>${req.body.phone}</span><br><h3>Descrição:</h3><span>${req.body.description}</span>`,
   };
   try {
     const result = await sgMail.send(msg);

@@ -17,7 +17,7 @@ const SnackBar = ({
 }) => {
   return (
     <S.Wrapper>
-      <Snackbar open={open} autoHideDuration={2000} onClose={handleClose}>
+      <Snackbar open={open} autoHideDuration={2500} onClose={handleClose}>
         <Alert
           onClose={handleClose}
           severity={type}

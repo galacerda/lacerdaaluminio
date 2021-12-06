@@ -23,9 +23,8 @@ const BudgetForm = () => {
   } = useForm({
     resolver: yupResolver(budgetSchema),
   });
-  console.log(errors);
+
   const onSubmit = async (data) => {
-    console.log(data);
     const response = await fetch("/api/contact", {
       method: "POST",
       headers: {
@@ -34,11 +33,13 @@ const BudgetForm = () => {
       },
       body: JSON.stringify(data),
     }).then((res) => res.json());
-    console.log(response);
+
     if (response.success) {
       setOpen(true);
       setType("success");
-      setMessage("Orçamento solicitado com sucesso");
+      setMessage(
+        "Orçamento solicitado com sucesso, entraremos em contato em breve!"
+      );
       reset({
         name: "",
         email: "",

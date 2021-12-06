@@ -4,7 +4,9 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Luminium</title>
+        <title>Lacerda Alumínio</title>
+        <link rel="shortcut icon" href="/img/favicon_1.png" />
+        <link rel="apple-touch-icon" href="/img/favicon_1.png" />
       </Head>
       <GlobalStyles />
       <Component {...pageProps} />
