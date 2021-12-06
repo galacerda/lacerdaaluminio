@@ -2,9 +2,9 @@ import styled from "styled-components";
 import media from "styled-media-query";
 
 export const Wrapper = styled.main`
-  padding: 10rem 20rem;
+  padding: 5rem 30rem;
   ${media.lessThan("medium")`
-    padding:3rem;
+    padding:5rem 3rem;
   `}
 `;
 

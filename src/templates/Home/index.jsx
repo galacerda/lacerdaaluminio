@@ -11,37 +11,52 @@ import { useEffect } from "react";
 import Slider from "../../components/Slider";
 import Workers from "../../components/Workers";
 import Footer from "../../components/Footer";
+import WhatsAppLink from "../../components/WhatsAppLink";
 
 const solding = "/img/solding.svg";
 
 const mailIcon = "/img/mailIcon.svg";
-const logo = "/img/luminiumLogo.svg";
+const phoneIcon = "/img/phoneIcon.svg";
+const logo = "/img/logo.svg";
 export default function Home() {
   return (
     <S.Wrapper>
+      <WhatsAppLink />
+      <S.HeaderContact>
+        <S.ContactItem>
+          <img src={phoneIcon} />
+          <span>(19) 99441-9605</span>
+        </S.ContactItem>
+        <S.ContactItem>
+          <img src={mailIcon} />
+          <span>luminiun@gmail.com</span>
+        </S.ContactItem>
+      </S.HeaderContact>
+      <S.WrapperLogo>
+        <img src={logo} />
+      </S.WrapperLogo>
       <div>
-        <S.CarouselWrapper>
-          <S.WrapperLogo>
-            <img src={logo} />
-          </S.WrapperLogo>
-          <S.SeiLa>
-            <Slider>
-              <S.SlideText>
-                Oferecemos <span>serviços profissionais</span>, com acabamentos{" "}
-                <span>impecáveis!</span>
-              </S.SlideText>
-              <S.SlideText>
-                Oferecemos serviços profissionais, com acabamentos impecáveis!
-              </S.SlideText>
-              <S.SlideText>
-                Oferecemos serviços profissionais, com acabamentos impecáveis!
-              </S.SlideText>
-            </Slider>
-          </S.SeiLa>
+        <S.HeaderCarousel>
+          <S.CarouselWrapper>
+            <S.SeiLa>
+              <Slider>
+                <S.SlideText>
+                  Oferecemos <span>serviços profissionais</span>, com
+                  acabamentos <span>impecáveis!</span>
+                </S.SlideText>
+                <S.SlideText>
+                  Oferecemos serviços profissionais, com acabamentos impecáveis!
+                </S.SlideText>
+                <S.SlideText>
+                  Oferecemos serviços profissionais, com acabamentos impecáveis!
+                </S.SlideText>
+              </Slider>
+            </S.SeiLa>
+          </S.CarouselWrapper>
           <S.ButtonWrapper>
-            <Button text="Peça um orçamento" />
+            <Button text="Solicite um orçamento" fontWeight="500" />
           </S.ButtonWrapper>
-        </S.CarouselWrapper>
+        </S.HeaderCarousel>
       </div>
       <Workers />
       <S.MoreAbout>
@@ -50,7 +65,7 @@ export default function Home() {
       <OurServices />
       <SectionImage img="/img/yellowBg.svg" fixed />
       <WhoAreUs />
-      <SectionImage img={solding} />
+      <SectionImage img={solding} fixed />
       <BudgetForm />
       <Footer />
     </S.Wrapper>

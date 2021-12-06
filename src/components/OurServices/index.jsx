@@ -26,6 +26,7 @@ export default function OurServices() {
           image={vidrosImg}
         />
         <ServiceDetail
+          colorCicle="gray"
           duration={5000}
           title="TELAS"
           description="Nossas esquadrias podem conter a tela mosqueteira, produzida a partir de fibra de vidro, 

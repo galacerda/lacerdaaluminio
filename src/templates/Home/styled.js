@@ -3,45 +3,70 @@ import media from "styled-media-query";
 import { Mail } from "@styled-icons/entypo/Mail";
 import { defaultTheme } from "../../styles/defaultTheme";
 
-const houseBg = "/img/houseBg.jpg";
+const houseBg = "/img/houseBg.svg";
 
 export const Wrapper = styled.div``;
 
 export const HeaderContact = styled.div`
-  background-color: ${defaultTheme.colors.black};
-  padding: 2rem 3rem;
+  background-color: ${defaultTheme.colors.gray};
+  height: 4rem;
+  padding: 0 2rem;
   display: flex;
   span {
-    padding-left: 1rem;
-    font-size: 1.6;
+    padding-left: 0.5rem;
+    font-size: 1.6rem;
     font-weight: 500;
     color: ${defaultTheme.colors.white};
+  }
+  img {
+    width: 2rem;
+    margin-left: 2rem;
   }
   align-items: center;
   justify-content: flex-end;
 
   ${media.lessThan("medium")`
-  display: none;
-    span,img{
-      display: none;
-    }
+  justify-content:center;
+  gap:1.5rem;
+  span {
+    padding-left: 0.5rem;
+    font-size: 1.4rem;
+  }
+  img {
+    width: 2rem;
+    margin-left: 0;
+  }
   `}
 `;
 
-export const WrapperLogo = styled.div`
-  padding: 10rem 0 5rem 0;
+export const ContactItem = styled.div`
+  display: flex;
+  align-items: center;
 `;
 
-export const CarouselWrapper = styled.div`
+export const WrapperLogo = styled.div`
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0;
+  img {
+    width: 40rem;
+  }
+`;
+
+export const HeaderCarousel = styled.div`
+  display: flex;
+  flex-direction: column;
   background-image: url(${houseBg});
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 15rem;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  height: 65vh;
+`;
 
+export const CarouselWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
   span {
     font-family: "Poppins";
   }
@@ -49,7 +74,7 @@ export const CarouselWrapper = styled.div`
     padding-bottom: 10rem;
   `}
   ${media.lessThan("medium")`
-    height: 70vh;
+    height: 95vh;
   `}
 `;
 
@@ -81,13 +106,19 @@ export const MoreAbout = styled.div`
   margin-top: 10rem;
   display: flex;
   justify-content: center;
+  ${media.lessThan("medium")`
+    margin-top: 5rem;
+  `}
+  text-align:center;
 `;
 
 export const ButtonWrapper = styled.div`
-  margin-top: 12.5rem;
-  ${media.lessThan("1600px")`
-    margin-top: 10rem;
-  `}
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.6);
 `;
 
 export const Slide = styled.div`
@@ -105,11 +136,14 @@ export const SeiLa = styled.div`
 `;
 
 export const SlideText = styled.span`
-  font-size: 3.4rem;
+  font-size: 3rem;
   color: ${defaultTheme.colors.white};
   span {
     color: ${defaultTheme.colors.yellow};
   }
+  ${media.lessThan("medium")`
+    font-size: 2rem;
+  `}
 `;
 
 export const MailIcon = styled(Mail)`

@@ -1,4 +1,6 @@
 import { createGlobalStyle } from "styled-components";
+import { defaultTheme } from "./defaultTheme";
+import { ScrollCustom } from "./scroll";
 
 const GlobalStyles = createGlobalStyle`
 
@@ -67,18 +69,19 @@ const GlobalStyles = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
   }
 
-    html {
-      font-size: 62.5%;
-      @media(max-height: 900px){
+  html,body,#__next{
+    ${ScrollCustom()}
+    font-size: 62.5%;
+    @media(max-height: 900px){
         font-size: 55%;
       }
-    }
+  }
 
-    body {
-      background-color: white;
-      font-family: "Poppins";
-      font-size: 1.6rem;
-   }
+  body {
+    background-color: ${defaultTheme.colors.white};
+    font-family: "Poppins";
+    font-size: 1.6rem;
+  }
 `;
 
 export default GlobalStyles;

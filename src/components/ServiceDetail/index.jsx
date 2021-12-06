@@ -4,7 +4,13 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
-const ServiceDetail = ({ image, title, description, duration }) => {
+const ServiceDetail = ({
+  image,
+  title,
+  description,
+  duration,
+  colorCicle = "yellow",
+}) => {
   useEffect(() => {
     AOS.init();
   }, []);
@@ -14,7 +20,7 @@ const ServiceDetail = ({ image, title, description, duration }) => {
       data-aos-duration="1000"
       data-aos-offset="250"
     >
-      <S.Circle>
+      <S.Circle colorCicle={colorCicle}>
         <img src={image} />
       </S.Circle>
       <Heading lineBottom>{title}</Heading>

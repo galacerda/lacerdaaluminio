@@ -10,6 +10,6 @@ export const SectionImage = styled.div`
 
     ${({ fixed }) => fixed && "background-attachment: fixed"};
 
-    height: 70vh;
+    height: 60vh;
   `}
 `;
