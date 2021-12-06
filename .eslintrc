@@ -5,13 +5,7 @@
     "jest/globals": true
   },
   "parser": "babel-eslint",
-  "extends": [
-    "plugin:react/recommended",
-    "airbnb",
-    "plugin:prettier/recommended",
-    "plugin:testing-library/recommended",
-    "plugin:testing-library/react"
-  ],
+
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
