@@ -31,17 +31,17 @@ const Workers = () => {
           data-aos-offset="300"
         >
           <span>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Se você busca um acabamento sofisticado em sua contrução, as
+            esquadrias de alumínio devem fazer parte do seu projeto, e para
+            colocar seu projeto em prática é que nós existimos. Com os melhores
+            materiais e profissionais, garantimos a sua satisfação!
           </span>
 
           <img
             src={frame}
             data-aos="fade-up"
-            data-aos-duration="700"
-            data-aos-offset="200"
+            data-aos-duration="500"
+            data-aos-offset="250"
           />
         </S.Description>
       </S.InfoWrapper>

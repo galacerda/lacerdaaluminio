@@ -40,6 +40,9 @@ export const Heading = styled.div`
     width: 0.6rem;
     height: 7rem;
     margin-right: 1rem;
+    ${media.lessThan("medium")`
+    height: 5rem;
+  `}
   }
 `;
 
