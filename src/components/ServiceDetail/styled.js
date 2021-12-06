@@ -30,7 +30,7 @@ export const Circle = styled.div`
     justify-content: center;
     margin-bottom: 3rem;
     img {
-      width: 50%;
+      width: 8.5rem;
     }
   `}
 `;

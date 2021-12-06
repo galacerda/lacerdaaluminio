@@ -5,7 +5,7 @@ export default function Button({
   onClick,
   borderRadius = "0.5rem",
   bgColor = "yellow",
-  bgHover = "#FABE12",
+  bgHover = "#D73A08",
   fontWeight = "500",
   type = "button",
 }) {
