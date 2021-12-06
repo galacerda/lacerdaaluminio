@@ -2,11 +2,11 @@ import styled, { css } from "styled-components";
 import media from "styled-media-query";
 
 const mediaMatchModifiers = {
-  lessThan: (size) => css`
+  lessThan: (size = "medium") => css`
     ${media.lessThan(size)` display: block `}
   `,
 
-  greaterThan: (size) => css`
+  greaterThan: (size = "medium") => css`
     ${media.greaterThan(size)` display: block `}
   `,
 };

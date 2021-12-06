@@ -11,9 +11,7 @@ export const Wrapper = styled.main`
     text-align: center;
     font-size: 1.8rem;
   }
-  ${media.lessThan("1600px")`
-    padding: 3rem 0 0 0 ;
-  `}
+
   ${media.lessThan("medium")`
     padding: 2rem;
   `}

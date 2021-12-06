@@ -72,9 +72,10 @@ const GlobalStyles = createGlobalStyle`
   html,body,#__next{
     ${ScrollCustom()}
     font-size: 62.5%;
+    scroll-behavior: smooth;
     @media(max-height: 900px){
         font-size: 55%;
-      }
+    }
   }
 
   body {

@@ -7,6 +7,8 @@ function MyApp({ Component, pageProps }) {
         <title>Lacerda Alumínio</title>
         <link rel="shortcut icon" href="/img/favicon_1.png" />
         <link rel="apple-touch-icon" href="/img/favicon_1.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Lacerda Alumínio" />
       </Head>
       <GlobalStyles />
       <Component {...pageProps} />

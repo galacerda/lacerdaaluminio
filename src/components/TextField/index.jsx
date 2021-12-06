@@ -17,8 +17,8 @@ const Input = ({
           onChange={onChange}
           label={labelText}
           multiline
-          rows={5}
-          rowsMax={6}
+          minRows={5}
+          maxRows={6}
           type={type}
           error={!!error}
           helperText={helperText}

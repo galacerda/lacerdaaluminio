@@ -20,7 +20,6 @@ export const Description = styled.div`
     margin-right: 2rem;
   }
 
-  ${media}
   img {
     border-radius: 0.5rem;
     -webkit-box-shadow: 12px 10px 16px -5px rgba(179, 179, 179, 1);

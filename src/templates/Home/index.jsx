@@ -54,7 +54,9 @@ export default function Home() {
             </S.SeiLa>
           </S.CarouselWrapper>
           <S.ButtonWrapper>
-            <Button text="Solicite um orçamento" fontWeight="500" />
+            <a href="#budget-form">
+              <Button text="Solicite um orçamento" fontWeight="500" />
+            </a>
           </S.ButtonWrapper>
         </S.HeaderCarousel>
       </div>

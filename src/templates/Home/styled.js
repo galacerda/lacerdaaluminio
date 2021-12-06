@@ -91,9 +91,7 @@ export const BudgetWrapper = styled.div`
     font-weight: 700;
     padding-right: 3rem;
   }
-  ${media.lessThan("1600px")`
-      padding: 2rem;
-  `}
+
   ${media.lessThan("medium")`
    span{
      padding: 0 0 2rem 0;

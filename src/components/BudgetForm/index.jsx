@@ -54,7 +54,7 @@ const BudgetForm = () => {
     }
   };
   return (
-    <S.Wrapper>
+    <S.Wrapper id="budget-form">
       <Heading lineLeft>Solicite um orçamento</Heading>
       <S.Content>
         <S.Form onSubmit={handleSubmit(onSubmit)}>
