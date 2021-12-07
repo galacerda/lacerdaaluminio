@@ -8,7 +8,6 @@ const ServiceDetail = ({
   image,
   title,
   description,
-  duration,
   colorCicle = "yellow",
 }) => {
   useEffect(() => {
@@ -21,7 +20,7 @@ const ServiceDetail = ({
       data-aos-offset="250"
     >
       <S.Circle colorCicle={colorCicle}>
-        <img src={image} />
+        <img src={image} alt={`Imagem referente a uma: ${title}`} />
       </S.Circle>
       <Heading lineBottom>{title}</Heading>
       <p>{description}</p>

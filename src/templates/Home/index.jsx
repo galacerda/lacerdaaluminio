@@ -24,16 +24,22 @@ export default function Home() {
       <WhatsAppLink />
       <S.HeaderContact>
         <S.ContactItem>
-          <img src={phoneIcon} />
+          <img src={phoneIcon} alt="Ícone referente a um telefone" />
           <span>(19) 99441-9605</span>
         </S.ContactItem>
         <S.ContactItem>
-          <img src={mailIcon} />
+          <img
+            src={mailIcon}
+            alt="Ícone referente a uma carta simbolizando o e-mail"
+          />
           <span>luminiun@gmail.com</span>
         </S.ContactItem>
       </S.HeaderContact>
       <S.WrapperLogo>
-        <img src={logo} />
+        <img
+          src={logo}
+          alt="Logotipo da Lacerda Aluminios, no qual possui um A grande e laranjado no centro, unindo as palavras lacerd e luminio"
+        />
       </S.WrapperLogo>
       <div>
         <S.HeaderCarousel>

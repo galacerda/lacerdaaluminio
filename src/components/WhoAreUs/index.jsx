@@ -31,6 +31,7 @@ const WhoAreUs = () => {
           <MediaMatch greaterThan="medium">
             <img
               src={handshakeImg}
+              alt="Duas pessoas apertando as mãos simbolizando o fechamento de um contrato, com um chapéu de construção atrás"
               alt="Dois homens apertando as mãos"
               data-aos="fade-left"
               data-aos-duration="600"

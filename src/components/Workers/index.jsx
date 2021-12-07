@@ -8,7 +8,10 @@ const Workers = () => {
     <S.Wrapper>
       <MediaMatch greaterThan="medium">
         <S.ImageWorker>
-          <img src={worker} />
+          <img
+            src={worker}
+            alt="Dois trabalhadores segurando uma janela de esquadria de aluminio"
+          />
         </S.ImageWorker>
       </MediaMatch>
       <S.InfoWrapper>
@@ -39,6 +42,7 @@ const Workers = () => {
 
           <img
             src={frame}
+            alt="Um perfil de uma esquadria cortado ao meio"
             data-aos="fade-up"
             data-aos-duration="500"
             data-aos-offset="250"
