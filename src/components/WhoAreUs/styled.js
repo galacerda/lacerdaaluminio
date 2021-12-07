@@ -6,6 +6,9 @@ export const Wrapper = styled.main`
   ${media.lessThan("medium")`
   padding:5rem 3rem;
   `}
+  ${media.lessThan("1280px")`
+  padding: 10rem 15rem;
+  `}
 `;
 
 export const Content = styled.div``;

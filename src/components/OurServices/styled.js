@@ -6,6 +6,9 @@ export const Wrapper = styled.main`
   ${media.lessThan("medium")`
     padding:5rem 3rem;
   `}
+  ${media.lessThan("1280px")`
+    padding: 5rem 15rem;
+  `}
 `;
 
 export const WrapperServicesDetails = styled.div`
@@ -17,5 +20,8 @@ export const WrapperServicesDetails = styled.div`
     grid-template-columns: 1fr;
     gap: 5rem;
     margin-top:5rem;
+  `}
+  ${media.lessThan("1280px")`
+    gap: 3rem;
   `}
 `;

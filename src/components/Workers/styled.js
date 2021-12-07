@@ -28,6 +28,10 @@ export const InfoWrapper = styled.div`
     max-width: 100%;
     padding-top: 5rem;
   `}
+  ${media.lessThan("1280px")`
+    padding-top: 13rem;
+    max-width: 60%;
+  `}
 `;
 
 export const Heading = styled.div`
@@ -74,6 +78,9 @@ export const Description = styled.div`
     margin-top: 10rem;
     width: 60%;
   `}
+    ${media.lessThan("1280px")`
+      margin-top: 5rem;
+   `}
   }
   span {
     ${media.lessThan("medium")`

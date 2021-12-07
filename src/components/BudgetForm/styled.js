@@ -8,6 +8,9 @@ export const Wrapper = styled.section`
   ${media.lessThan("medium")`
      padding: 5rem 3rem;
   `}
+  ${media.lessThan("1280px")`
+     padding: 10rem 15rem;
+  `}
 `;
 
 export const Content = styled.div`
@@ -31,6 +34,9 @@ export const Form = styled.form`
       margin:3rem 0;
       padding: 2rem;
       height: auto;
+  `}
+  ${media.lessThan("1280px")`
+    margin-top: 5rem;
   `}
 `;
 
