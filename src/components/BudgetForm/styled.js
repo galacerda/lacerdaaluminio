@@ -4,12 +4,12 @@ import media from "styled-media-query";
 
 export const Wrapper = styled.section`
   padding: 5rem 23rem;
+  ${media.lessThan("1280px")`
+     padding: 10rem 15rem;
+  `}
 
   ${media.lessThan("medium")`
      padding: 5rem 3rem;
-  `}
-  ${media.lessThan("1280px")`
-     padding: 10rem 15rem;
   `}
 `;
 
@@ -29,14 +29,15 @@ export const Form = styled.form`
   padding: 4rem 3rem;
   background-color: white;
   z-index: 1;
+
+  ${media.lessThan("1280px")`
+    margin-top: 5rem;
+  `}
   ${media.lessThan("medium")`
       width:100%;
       margin:3rem 0;
       padding: 2rem;
       height: auto;
-  `}
-  ${media.lessThan("1280px")`
-    margin-top: 5rem;
   `}
 `;
 

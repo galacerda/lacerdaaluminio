@@ -3,11 +3,11 @@ import media from "styled-media-query";
 
 export const Wrapper = styled.main`
   padding: 12.5rem 23rem;
-  ${media.lessThan("medium")`
-  padding:5rem 3rem;
-  `}
   ${media.lessThan("1280px")`
   padding: 10rem 15rem;
+  `}
+  ${media.lessThan("medium")`
+  padding:5rem 3rem;
   `}
 `;
 
