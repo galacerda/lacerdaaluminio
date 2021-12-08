@@ -8,7 +8,8 @@ import { useEffect } from "react";
 export default function OurServices() {
   const telasImg = "/img/telas.svg";
   const vidrosImg = "/img/vidros.svg";
-  const perfilImg = "/img/perfil.svg";
+  const bodyGlass = "/img/bodyGlass.svg";
+  const close = "/img/close.svg";
 
   useEffect(() => {
     AOS.init({ duration: 200 });
@@ -35,10 +36,15 @@ export default function OurServices() {
           image={telasImg}
         />
         <ServiceDetail
-          title="PERFIL"
-          description="Cada linha tem sua peculiaridade e sempre o melhor tipo de perfil é indicado para cada peça a ser produzida 
-        e instalada no vão de uma obra. Os perfis tem espessuras diferentes e isso interfere diretamente na sua resistência."
-          image={perfilImg}
+          colorCicle="gray"
+          title="GUARDA CORPO DE VIDRO"
+          description="Peça chave na valorização de ambientes externos e internos. O guarda-corpo de vidro é tendência incontestável no universo da arquitetura e da decoração contemporânea, além de oferecer segurança contra o risco de queda."
+          image={bodyGlass}
+        />
+        <ServiceDetail
+          title="FECHAMENTO DE SACADA"
+          description="Peça chave na valorização de ambientes externos e internos. O guarda-corpo de vidro é tendência incontestável no universo da arquitetura e da decoração contemporânea, além de oferecer segurança contra o risco de queda."
+          image={close}
         />
       </S.WrapperServicesDetails>
     </S.Wrapper>

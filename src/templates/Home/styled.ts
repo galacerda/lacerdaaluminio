@@ -28,12 +28,13 @@ export const HeaderContact = styled.div`
   ${media.lessThan("medium")`
   justify-content:center;
   gap:1.5rem;
+  padding: 0 1rem;
   span {
     padding-left: 0.5rem;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
   img {
-    width: 2rem;
+    width: 1.5rem;
     margin-left: 0;
   }
   `}

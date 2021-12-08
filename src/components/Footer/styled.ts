@@ -9,7 +9,7 @@ export const Wrapper = styled.footer`
   margin-top: -15rem;
   position: relative;
 
-  ${media.lessThan("1280px" as keyof DefaultBreakpoints)`
+  ${media.lessThan("1336px" as keyof DefaultBreakpoints)`
     margin-top: -20rem;
   `}
 `;

@@ -28,7 +28,7 @@ export const InfoWrapper = styled.div`
   max-width: 47%;
   padding-top: 17rem;
   font-size: 2rem;
-  ${media.lessThan("1280px" as keyof DefaultBreakpoints)`
+  ${media.lessThan("1336px" as keyof DefaultBreakpoints)`
     padding-top: 13rem;
     max-width: 60%;
   `}
@@ -79,7 +79,7 @@ export const Description = styled.div`
   img {
     width: 70%;
     margin-top: 13rem;
-    ${media.lessThan("1280px" as keyof DefaultBreakpoints)`
+    ${media.lessThan("1336px" as keyof DefaultBreakpoints)`
       margin-top: 5rem;
    `}
     ${media.lessThan("medium")`

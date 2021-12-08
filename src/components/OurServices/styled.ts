@@ -2,9 +2,9 @@ import styled from "styled-components";
 import media, { DefaultBreakpoints } from "styled-media-query";
 
 export const Wrapper = styled.main`
-  padding: 5rem 30rem;
-  ${media.lessThan("1280px" as keyof DefaultBreakpoints)`
-    padding: 5rem 15rem;
+  padding: 5rem 23rem;
+  ${media.lessThan("1336px" as keyof DefaultBreakpoints)`
+    padding: 5rem 5rem;
   `}
   ${media.lessThan("medium")`
     padding:5rem 3rem;
@@ -13,11 +13,8 @@ export const Wrapper = styled.main`
 
 export const WrapperServicesDetails = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 10rem;
-  ${media.lessThan("1280px" as keyof DefaultBreakpoints)`
-    gap: 3rem;
-  `}
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
   ${media.lessThan("medium")`
     display: grid;
     grid-template-columns: 1fr;

@@ -3,8 +3,8 @@ import media, { DefaultBreakpoints } from "styled-media-query";
 
 export const Wrapper = styled.main`
   padding: 12.5rem 23rem;
-  ${media.lessThan("1280px" as keyof DefaultBreakpoints)`
-  padding: 10rem 15rem;
+  ${media.lessThan("1336px" as keyof DefaultBreakpoints)`
+  padding: 10rem 5rem;
   `}
   ${media.lessThan("medium")`
   padding:5rem 3rem;

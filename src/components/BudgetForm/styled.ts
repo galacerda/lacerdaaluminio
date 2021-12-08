@@ -4,8 +4,8 @@ import media, { DefaultBreakpoints } from "styled-media-query";
 
 export const Wrapper = styled.section`
   padding: 5rem 23rem;
-  ${media.lessThan("1280px" as keyof DefaultBreakpoints)`
-     padding: 10rem 15rem;
+  ${media.lessThan("1336px" as keyof DefaultBreakpoints)`
+     padding:10rem 5rem;
   `}
 
   ${media.lessThan("medium")`
@@ -29,7 +29,7 @@ export const Form = styled.form`
   padding: 4rem 3rem;
   background-color: white;
   z-index: 1;
-  ${media.lessThan("1280px" as keyof DefaultBreakpoints)`
+  ${media.lessThan("1336px" as keyof DefaultBreakpoints)`
     margin-top: 5rem;
   `}
   ${media.lessThan("medium")`

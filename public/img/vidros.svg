@@ -3,8 +3,5 @@
 <path d="M5 163L5 218C5 220.761 7.23858 223 10 223L69 223" stroke="#7E8595" stroke-width="10"/>
 <path d="M303 163L303 218C303 220.761 300.761 223 298 223L239 223" stroke="#7E8595" stroke-width="10"/>
 <path d="M303 65L303 10C303 7.23858 300.761 5 298 5L239 5" stroke="#7E8595" stroke-width="10"/>
-<mask id="path-5-inside-1_318_48" fill="white">
-<rect x="129" y="88" width="50" height="46" rx="3"/>
-</mask>
-<rect x="129" y="88" width="50" height="46" rx="3" stroke="#7E8595" stroke-width="20" mask="url(#path-5-inside-1_318_48)"/>
+<rect x="21" y="22" width="266" height="184" fill="#B1FFFA" fill-opacity="0.21"/>
 </svg>
