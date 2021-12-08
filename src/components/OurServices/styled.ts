@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import media from "styled-media-query";
+import media, { DefaultBreakpoints } from "styled-media-query";
 
 export const Wrapper = styled.main`
   padding: 5rem 30rem;
-  ${media.lessThan("1280px")`
+  ${media.lessThan("1280px" as keyof DefaultBreakpoints)`
     padding: 5rem 15rem;
   `}
   ${media.lessThan("medium")`
@@ -15,7 +15,7 @@ export const WrapperServicesDetails = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10rem;
-  ${media.lessThan("1280px")`
+  ${media.lessThan("1280px" as keyof DefaultBreakpoints)`
     gap: 3rem;
   `}
   ${media.lessThan("medium")`

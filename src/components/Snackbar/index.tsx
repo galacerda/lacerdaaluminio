@@ -9,6 +9,13 @@ function Alert(props) {
   return <MuiAlert elevation={6} variant="filled" {...props} />;
 }
 
+type SnackBarProps = {
+  open: boolean;
+  handleClose: () => void;
+  message: string;
+  type: string;
+};
+
 const SnackBar = ({
   open = true,
   handleClose,
@@ -25,7 +32,7 @@ const SnackBar = ({
           action={
             <>
               <IconButton size="medium" color="inherit" onClick={handleClose}>
-                <CloseIcon fontSize="big" />
+                <CloseIcon fontSize="large" />
               </IconButton>
             </>
           }

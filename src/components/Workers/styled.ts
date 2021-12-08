@@ -1,11 +1,16 @@
 import styled, { css } from "styled-components";
 import { defaultTheme } from "../../styles/defaultTheme";
-import media from "styled-media-query";
+import media, { DefaultBreakpoints } from "styled-media-query";
+
+type InfoProps = {
+  fontWeight: number;
+};
+
 export const Wrapper = styled.main`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 8rem;
-  ${media.lessThan("medium")`
+  ${media.lessThan("medium" as keyof DefaultBreakpoints)`
     display: flex;
     flex-direction:column;
     padding:3rem;
@@ -23,7 +28,7 @@ export const InfoWrapper = styled.div`
   max-width: 47%;
   padding-top: 17rem;
   font-size: 2rem;
-  ${media.lessThan("1280px")`
+  ${media.lessThan("1280px" as keyof DefaultBreakpoints)`
     padding-top: 13rem;
     max-width: 60%;
   `}
@@ -40,7 +45,7 @@ export const Heading = styled.div`
   align-items: center;
   ::before {
     content: "";
-    background-color: ${defaultTheme.colors.yellow};
+    background-color: ${defaultTheme.colors.orange};
     width: 0.6rem;
     height: 7rem;
     margin-right: 1rem;
@@ -50,7 +55,7 @@ export const Heading = styled.div`
   }
 `;
 
-export const Info = styled.span`
+export const Info = styled.span<InfoProps>`
   ${({ fontWeight }) => css`
     font-weight: ${fontWeight || "400"};
   `}
@@ -74,7 +79,7 @@ export const Description = styled.div`
   img {
     width: 70%;
     margin-top: 13rem;
-    ${media.lessThan("1280px")`
+    ${media.lessThan("1280px" as keyof DefaultBreakpoints)`
       margin-top: 5rem;
    `}
     ${media.lessThan("medium")`

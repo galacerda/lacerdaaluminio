@@ -1,7 +1,11 @@
 import * as S from "./styled";
 import SlickSlider from "react-slick";
 
-const Slider = ({ children }) => {
+type SliderProps = {
+  children: React.ReactNode;
+};
+
+const Slider = ({ children }: SliderProps) => {
   const settings = {
     dots: true,
     arrows: false,

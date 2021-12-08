@@ -1,5 +1,14 @@
 import * as S from "./styled";
 
+type InputProps = {
+  labelText?: string;
+  type?: string;
+  error: boolean;
+  helperText: string;
+  value: string;
+  onChange: () => void;
+};
+
 const Input = ({
   labelText = "Nome",
   type = "normal",
@@ -7,7 +16,7 @@ const Input = ({
   helperText,
   value,
   onChange,
-}) => {
+}: InputProps) => {
   return (
     <S.Wrapper type={type}>
       {type === "textarea" ? (

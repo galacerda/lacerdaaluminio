@@ -127,7 +127,7 @@ export const Slide = styled.div`
   text-align: center;
 `;
 
-export const SeiLa = styled.div`
+export const SliderContainer = styled.div`
   width: 100%;
   text-align: center;
 `;
@@ -136,7 +136,7 @@ export const SlideText = styled.span`
   font-size: 3rem;
   color: ${defaultTheme.colors.white};
   span {
-    color: ${defaultTheme.colors.yellow};
+    color: ${defaultTheme.colors.orange};
   }
   ${media.lessThan("medium")`
     font-size: 2rem;
@@ -145,5 +145,5 @@ export const SlideText = styled.span`
 
 export const MailIcon = styled(Mail)`
   width: 2rem;
-  color: ${defaultTheme.colors.yellow};
+  color: ${defaultTheme.colors.orange};
 `;

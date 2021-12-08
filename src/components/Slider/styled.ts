@@ -19,7 +19,7 @@ export const Wrapper = styled.section`
       margin: 1rem;
       cursor: pointer;
       &.slick-active {
-        background: ${defaultTheme.colors.yellow};
+        background: ${defaultTheme.colors.orange};
       }
     }
     button {

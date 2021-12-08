@@ -1,10 +1,10 @@
 import styled, { css } from "styled-components";
 import { defaultTheme } from "../../styles/defaultTheme";
-import media from "styled-media-query";
+
 const headingModifiers = {
   lineLeft: () => css`
     padding-left: 1rem;
-    border-left: 0.4rem solid ${defaultTheme.colors.yellow};
+    border-left: 0.4rem solid ${defaultTheme.colors.orange};
   `,
   lineBottom: () => css`
     margin-bottom: 1rem;
@@ -12,7 +12,7 @@ const headingModifiers = {
       content: "";
       width: 80%;
       height: 0.5rem;
-      background-color: ${defaultTheme.colors.yellow};
+      background-color: ${defaultTheme.colors.orange};
     }
     display: flex;
     flex-direction: column;

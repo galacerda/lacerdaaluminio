@@ -2,7 +2,12 @@ import styled, { css } from "styled-components";
 import TextField from "@material-ui/core/TextField";
 import { defaultTheme } from "../../styles/defaultTheme";
 import media from "styled-media-query";
-export const Wrapper = styled.main`
+
+type WrapperProps = {
+  type: string;
+};
+
+export const Wrapper = styled.main<WrapperProps>`
   ${({ type }) => css`
     display: flex;
     flex-direction: column;
@@ -12,7 +17,7 @@ export const Wrapper = styled.main`
 
 export const Label = styled.label``;
 
-export const Input = styled(TextField)`
+export const Input = styled(TextField)<WrapperProps>`
   ${({ type }) => css`
     .MuiInputBase-root {
       font-size: 1.6rem;
@@ -24,11 +29,11 @@ export const Input = styled(TextField)`
       border-color: red;
     }
     .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
-      border-color: ${defaultTheme.colors.yellow};
+      border-color: ${defaultTheme.colors.orange};
     }
 
     .MuiFormLabel-root.Mui-focused {
-      border-color: ${defaultTheme.colors.yellow};
+      border-color: ${defaultTheme.colors.orange};
     }
     .MuiInputBase-root {
       font-size: 1.6rem;
@@ -53,7 +58,7 @@ export const Input = styled(TextField)`
       .MuiOutlinedInput-root
       .Mui-focused
       .MuiOutlinedInput-notchedOutline {
-      border-color: ${defaultTheme.colors.yellow};
+      border-color: ${defaultTheme.colors.orange};
     }
   `}
 `;

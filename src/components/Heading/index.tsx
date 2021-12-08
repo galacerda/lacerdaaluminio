@@ -1,6 +1,12 @@
 import * as S from "./styled";
 
-const Heading = ({ children, lineLeft, lineBottom }) => {
+type HenadingProps = {
+  children: React.ReactNode;
+  lineLeft: boolean;
+  lineBottom: boolean;
+};
+
+const Heading = ({ children, lineLeft, lineBottom }: HenadingProps) => {
   return (
     <S.Heading lineLeft={lineLeft} lineBottom={lineBottom}>
       {children}

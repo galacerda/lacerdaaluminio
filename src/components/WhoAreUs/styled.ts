@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import media from "styled-media-query";
+import media, { DefaultBreakpoints } from "styled-media-query";
 
 export const Wrapper = styled.main`
   padding: 12.5rem 23rem;
-  ${media.lessThan("1280px")`
+  ${media.lessThan("1280px" as keyof DefaultBreakpoints)`
   padding: 10rem 15rem;
   `}
   ${media.lessThan("medium")`
@@ -22,13 +22,13 @@ export const Description = styled.div`
     font-size: 1.8rem;
     margin-right: 2rem;
   }
-
   img {
     border-radius: 0.5rem;
-    -webkit-box-shadow: 12px 10px 16px -5px rgba(179, 179, 179, 1);
-    -moz-box-shadow: 12px 10px 16px -5px rgba(179, 179, 179, 1);
-    box-shadow: 12px 10px 16px -5px rgba(179, 179, 179, 1);
+    -webkit-box-shadow: 1.2rem 1rem 1.6rem -0.5rem rgba(179, 179, 179, 1);
+    -moz-box-shadow: 1.2rem 1rem 1.6rem -0.5rem rgba(179, 179, 179, 1);
+    box-shadow: 1.2rem 1rem 1.6rem -0.5rem rgba(179, 179, 179, 1);
   }
+
   ${media.lessThan("medium")`
     padding:5rem 0;
   `}

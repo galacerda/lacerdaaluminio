@@ -11,6 +11,7 @@ const WhoAreUs = () => {
   useEffect(() => {
     AOS.init();
   }, []);
+
   return (
     <S.Wrapper>
       <Heading lineLeft>Quem somos nós</Heading>
@@ -32,7 +33,6 @@ const WhoAreUs = () => {
             <img
               src={handshakeImg}
               alt="Duas pessoas apertando as mãos simbolizando o fechamento de um contrato, com um chapéu de construção atrás"
-              alt="Dois homens apertando as mãos"
               data-aos="fade-left"
               data-aos-duration="600"
               data-aos-offset="300"

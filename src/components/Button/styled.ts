@@ -1,7 +1,15 @@
 import styled, { css } from "styled-components";
 import { defaultTheme } from "../../styles/defaultTheme";
 import media from "styled-media-query";
-export const Button = styled.button`
+
+type ButtonProps = {
+  borderRadius: string;
+  bgColor: string;
+  bgHover: string;
+  fontWeight: string;
+};
+
+export const Button = styled.button<ButtonProps>`
   ${({ borderRadius, bgColor, bgHover, fontWeight }) => css`
     padding: 1.5rem 7rem;
     border-radius: ${borderRadius};

@@ -1,6 +1,11 @@
 import styled, { css } from "styled-components";
 import media from "styled-media-query";
 import { defaultTheme } from "../../styles/defaultTheme";
+import { ServiceDetailProps } from "./index";
+
+type CircleProps = {
+  colorCicle: Pick<ServiceDetailProps, "colorCicle">;
+};
 
 export const Wrapper = styled.main`
   display: flex;
@@ -11,13 +16,12 @@ export const Wrapper = styled.main`
     text-align: center;
     font-size: 1.8rem;
   }
-
   ${media.lessThan("medium")`
     padding: 2rem;
   `}
 `;
 
-export const Circle = styled.div`
+export const Circle = styled.div<CircleProps>`
   ${({ colorCicle }) => css`
     width: 20rem;
     height: 20rem;

@@ -4,15 +4,23 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
+export type ServiceDetailProps = {
+  image: string;
+  title: string;
+  description: string;
+  colorCicle?: string;
+};
+
 const ServiceDetail = ({
   image,
   title,
   description,
-  colorCicle = "yellow",
-}) => {
+  colorCicle = "orange",
+}: ServiceDetailProps) => {
   useEffect(() => {
     AOS.init();
   }, []);
+
   return (
     <S.Wrapper
       data-aos="fade-up"

@@ -7,7 +7,6 @@ import { SectionImage } from "../../components/SectionImage/styled";
 import WhoAreUs from "../../components/WhoAreUs";
 import BudgetForm from "../../components/BudgetForm";
 
-import { useEffect } from "react";
 import Slider from "../../components/Slider";
 import Workers from "../../components/Workers";
 import Footer from "../../components/Footer";
@@ -32,7 +31,7 @@ export default function Home() {
             src={mailIcon}
             alt="Ícone referente a uma carta simbolizando o e-mail"
           />
-          <span>luminiun@gmail.com</span>
+          <span>orçamento.lacerdaaluminio@gmail.com</span>
         </S.ContactItem>
       </S.HeaderContact>
       <S.WrapperLogo>
@@ -44,7 +43,7 @@ export default function Home() {
       <div>
         <S.HeaderCarousel>
           <S.CarouselWrapper>
-            <S.SeiLa>
+            <S.SliderContainer>
               <Slider>
                 <S.SlideText>
                   Oferecemos <span>serviços profissionais</span>, com
@@ -57,7 +56,7 @@ export default function Home() {
                   Oferecemos serviços profissionais, com acabamentos impecáveis!
                 </S.SlideText>
               </Slider>
-            </S.SeiLa>
+            </S.SliderContainer>
           </S.CarouselWrapper>
           <S.ButtonWrapper>
             <a href="#budget-form">

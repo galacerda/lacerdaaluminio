@@ -9,8 +9,6 @@ import budgetSchema from "../../validations/budgetSchema";
 
 import { useState } from "react";
 
-const frame = "/img/frame2.svg";
-
 const BudgetForm = () => {
   const [open, setOpen] = useState(false);
   const [type, setType] = useState("");

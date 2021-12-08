@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import { defaultTheme } from "../../styles/defaultTheme";
-import media from "styled-media-query";
+import media, { DefaultBreakpoints } from "styled-media-query";
 
 export const Wrapper = styled.section`
   padding: 5rem 23rem;
-  ${media.lessThan("1280px")`
+  ${media.lessThan("1280px" as keyof DefaultBreakpoints)`
      padding: 10rem 15rem;
   `}
 
@@ -29,8 +29,7 @@ export const Form = styled.form`
   padding: 4rem 3rem;
   background-color: white;
   z-index: 1;
-
-  ${media.lessThan("1280px")`
+  ${media.lessThan("1280px" as keyof DefaultBreakpoints)`
     margin-top: 5rem;
   `}
   ${media.lessThan("medium")`
