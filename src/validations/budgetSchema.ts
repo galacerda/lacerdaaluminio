@@ -7,7 +7,7 @@ const budgetSchema = yup.object().shape({
     .string()
     .transform((value) => value.replace(/[^\d]/g, ""))
     .required("Campo obrigatório")
-    .min(10, "O telefone deve conter no mínimo 10 números."),
+    .min(10, "Mínimo 10 digitos."),
   city: yup.string().required("Campo obrigatório"),
   description: yup.string().required("Campo obrigatório"),
 });

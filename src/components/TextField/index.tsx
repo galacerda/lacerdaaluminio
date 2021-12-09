@@ -16,6 +16,7 @@ const Input = ({
   helperText,
   value,
   onChange,
+  ...props
 }: InputProps) => {
   return (
     <S.Wrapper type={type}>
@@ -31,6 +32,7 @@ const Input = ({
           type={type}
           error={!!error}
           helperText={helperText}
+          {...props}
         />
       ) : (
         <S.Input
@@ -41,6 +43,7 @@ const Input = ({
           type={type}
           error={!!error}
           helperText={helperText}
+          {...props}
         />
       )}
     </S.Wrapper>

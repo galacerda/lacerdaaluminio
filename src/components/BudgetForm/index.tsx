@@ -6,6 +6,7 @@ import SnackBar from "../Snackbar";
 import { useForm, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import budgetSchema from "../../validations/budgetSchema";
+import InputMask from "react-input-mask";
 
 import { useState } from "react";
 
@@ -55,7 +56,14 @@ const BudgetForm = () => {
     <S.Wrapper id="budget-form">
       <Heading lineLeft>Solicite um orçamento</Heading>
       <S.Content>
+        <h1>
+          Solicite aqui um orçamento. Nossa equipe irá entrar em contato com
+          você para prosseguir com o atendimento. Portanto, insira dados reais
+          de contato. Caso queira fazer contato diretamente com um atendente,
+          mande uma mensagem no WhatsApp!
+        </h1>
         <S.Form onSubmit={handleSubmit(onSubmit)}>
+          <span>Preencha todos os campos</span>
           <Controller
             name="name"
             control={control}
@@ -97,13 +105,21 @@ const BudgetForm = () => {
                 field: { onChange, value },
                 fieldState: { error },
               }) => (
-                <TextField
-                  labelText="Telefone"
+                <InputMask
+                  mask="(99) 99999-9999"
                   value={value}
                   onChange={onChange}
-                  error={!!errors?.phone}
-                  helperText={errors?.phone?.message}
-                />
+                  maskChar=""
+                >
+                  {(inputProps) => (
+                    <TextField
+                      {...inputProps}
+                      labelText="Telefone"
+                      error={!!errors?.phone}
+                      helperText={errors?.phone?.message}
+                    />
+                  )}
+                </InputMask>
               )}
             />
           </S.Line>

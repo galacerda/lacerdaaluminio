@@ -32,7 +32,7 @@ export default function OurServices() {
           title="TELAS"
           description="Nossas esquadrias podem conter a tela mosqueteira, produzida a partir de fibra de vidro, 
         que impede a entrada de insetos no ambiente, sem prejudicar a ventilação e entrada de luz. As telas são 
-        resistentes a chuva e possuem ótima qualidade nas fibras, fazendo com que dificilmente deformem ou desfiem."
+        resistentes a chuva e possuem ótima qualidade nas fibras."
           image={telasImg}
         />
         <ServiceDetail
@@ -43,7 +43,7 @@ export default function OurServices() {
         />
         <ServiceDetail
           title="FECHAMENTO DE SACADA"
-          description="Peça chave na valorização de ambientes externos e internos. O guarda-corpo de vidro é tendência incontestável no universo da arquitetura e da decoração contemporânea, além de oferecer segurança contra o risco de queda."
+          description="O fechamento de sacada com vidro é uma maneira prática de ampliar a área útil de sua residência.  Além disso, o envidraçamento de sacada protege seus móveis da ação degradante do sol e da chuva."
           image={close}
         />
       </S.WrapperServicesDetails>

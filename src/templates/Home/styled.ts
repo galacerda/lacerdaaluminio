@@ -52,6 +52,11 @@ export const WrapperLogo = styled.div`
   img {
     width: 40rem;
   }
+  ${media.lessThan("medium")`
+    img {
+      width: 35rem;
+    }
+  `}
 `;
 
 export const HeaderCarousel = styled.div`

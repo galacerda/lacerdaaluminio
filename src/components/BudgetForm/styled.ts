@@ -15,23 +15,35 @@ export const Wrapper = styled.section`
 
 export const Content = styled.div`
   display: flex;
-  align-items: center;
   justify-content: center;
+  margin-top: 5rem;
+  h1 {
+    width: 50%;
+    font-weight: 500;
+    margin-right: 5rem;
+    font-size: 1.8rem;
+  }
+  ${media.lessThan("medium")`
+      flex-direction:column;
+      h1 {
+        width: 100%;
+      }
+  `}
 `;
 
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
-  margin: 3rem;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-  width: 70rem;
-  height: 60rem;
-  padding: 4rem 3rem;
+  width: 80rem;
+  height: auto;
+  padding: 3rem;
   background-color: white;
   z-index: 1;
-  ${media.lessThan("1336px" as keyof DefaultBreakpoints)`
-    margin-top: 5rem;
-  `}
+  span {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
   ${media.lessThan("medium")`
       width:100%;
       margin:3rem 0;
