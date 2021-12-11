@@ -4,7 +4,7 @@ import SlickSlider, { Settings } from "react-slick";
 type SliderProps = {
   children: React.ReactNode;
   settings: Settings;
-  darkDots: boolean;
+  darkDots?: boolean;
 };
 
 const Slider = ({ children, settings, darkDots = false }: SliderProps) => {
