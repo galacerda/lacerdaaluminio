@@ -1,24 +1,15 @@
 import * as S from "./styled";
-import SlickSlider from "react-slick";
+import SlickSlider, { Settings } from "react-slick";
 
 type SliderProps = {
   children: React.ReactNode;
+  settings: Settings;
+  darkDots: boolean;
 };
 
-const Slider = ({ children }: SliderProps) => {
-  const settings = {
-    dots: true,
-    arrows: false,
-    infinite: true,
-    slidesToScroll: 1,
-    autoplay: true,
-    speed: 300,
-    pauseOnHover: false,
-    autoplaySpeed: 3000,
-    cssEase: "linear",
-  };
+const Slider = ({ children, settings, darkDots = false }: SliderProps) => {
   return (
-    <S.Wrapper>
+    <S.Wrapper darkDots={darkDots}>
       <SlickSlider {...settings}>{children}</SlickSlider>
     </S.Wrapper>
   );

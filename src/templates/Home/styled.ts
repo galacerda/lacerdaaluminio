@@ -143,6 +143,7 @@ export const SlideText = styled.span`
   color: ${defaultTheme.colors.white};
   span {
     color: ${defaultTheme.colors.orange};
+    font-weight: 600;
   }
   ${media.lessThan("medium")`
     font-size: 2rem;

@@ -11,12 +11,26 @@ import Slider from "../../components/Slider";
 import Workers from "../../components/Workers";
 import Footer from "../../components/Footer";
 import WhatsAppLink from "../../components/WhatsAppLink";
+import Gallery from "../../components/Gallery";
+
+const settings = {
+  dots: true,
+  arrows: false,
+  infinite: true,
+  slidesToScroll: 1,
+  autoplay: true,
+  speed: 300,
+  pauseOnHover: false,
+  autoplaySpeed: 3000,
+  cssEase: "linear",
+};
 
 const solding = "/img/solding.svg";
 
 const mailIcon = "/img/mailIcon.svg";
 const phoneIcon = "/img/phoneIcon.svg";
 const logo = "/img/logo.svg";
+
 export default function Home() {
   return (
     <S.Wrapper>
@@ -44,16 +58,18 @@ export default function Home() {
         <S.HeaderCarousel>
           <S.CarouselWrapper>
             <S.SliderContainer>
-              <Slider>
+              <Slider settings={settings}>
                 <S.SlideText>
                   Oferecemos <span>serviços profissionais</span>, com
                   acabamentos <span>impecáveis!</span>
                 </S.SlideText>
                 <S.SlideText>
-                  Oferecemos serviços profissionais, com acabamentos impecáveis!
+                  Trabalhamos com os <span>melhores materiais</span> presentes
+                  no mercado
                 </S.SlideText>
                 <S.SlideText>
-                  Oferecemos serviços profissionais, com acabamentos impecáveis!
+                  Uma equipe <span>profissional</span>, compromissada com a sua
+                  <span> satisfação!</span>
                 </S.SlideText>
               </Slider>
             </S.SliderContainer>
@@ -70,6 +86,7 @@ export default function Home() {
         <Heading lineBottom>Saiba mais sobre a nossa empresa</Heading>
       </S.MoreAbout>
       <OurServices />
+      <Gallery />
       <SectionImage img="/img/yellowBg.svg" fixed />
       <WhoAreUs />
       <SectionImage img={solding} fixed />

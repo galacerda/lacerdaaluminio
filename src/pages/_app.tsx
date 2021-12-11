@@ -1,5 +1,6 @@
 import Head from "next/head";
 import GlobalStyles from "../styles/globalStyles";
+
 function MyApp({ Component, pageProps }) {
   return (
     <>
@@ -15,6 +16,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <GlobalStyles />
       <Component {...pageProps} />
+      <script>0</script>
     </>
   );
 }

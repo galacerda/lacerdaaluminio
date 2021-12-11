@@ -13,3 +13,13 @@ export const Wrapper = styled.footer`
     margin-top: -20rem;
   `}
 `;
+
+export const Dev = styled.div`
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translateX(-50%);
+  span {
+    color: ${defaultTheme.colors.white};
+  }
+`;
