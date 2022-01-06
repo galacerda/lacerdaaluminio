@@ -1,19 +1,13 @@
 import * as S from "./styled";
 import Heading from "../Heading";
 import ServiceDetail from "../ServiceDetail";
-import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
 
 export default function OurServices() {
   const telasImg = "/img/telas.svg";
   const vidrosImg = "/img/vidros.svg";
   const bodyGlass = "/img/bodyGlass.svg";
   const close = "/img/close.svg";
-
-  useEffect(() => {
-    AOS.init({ duration: 200 });
-  });
 
   return (
     <S.Wrapper>

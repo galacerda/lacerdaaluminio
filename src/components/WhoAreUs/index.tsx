@@ -1,27 +1,17 @@
 import * as S from "./styled";
 import Heading from "../Heading";
 import MediaMatch from "../MediaMatch";
-import { useEffect } from "react";
-import AOS from "aos";
 import "aos/dist/aos.css";
 
 const handshakeImg = "/img/handshake.jpg";
 
 const WhoAreUs = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
   return (
     <S.Wrapper>
       <Heading lineLeft>Quem somos nós</Heading>
       <S.Content>
         <S.Description>
-          <p
-            data-aos="fade-right"
-            data-aos-duration="600"
-            data-aos-offset="300"
-          >
+          <p data-aos="fade-right" data-aos-duration="600">
             Somos uma empresa especializada na produção de esquadrias de
             alumínio, totalmente focada em atender com excelência nossos
             clientes. Nossa maior motivação é concretizar nossos projetos,
@@ -35,7 +25,6 @@ const WhoAreUs = () => {
               alt="Duas pessoas apertando as mãos simbolizando o fechamento de um contrato, com um chapéu de construção atrás"
               data-aos="fade-left"
               data-aos-duration="600"
-              data-aos-offset="300"
             />
           </MediaMatch>
         </S.Description>

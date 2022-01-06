@@ -18,21 +18,12 @@ const Workers = () => {
         <S.Heading>
           <S.InfoTextContent>
             <S.Info>Nossa especialidade é...</S.Info>
-            <S.Info
-              fontWeight={700}
-              data-aos="fade-up"
-              data-aos-duration="700"
-              data-aos-offset="200"
-            >
+            <S.Info fontWeight={700} data-aos="fade-up" data-aos-duration="700">
               ESQUADRIAS DE ALUMÍNIO
             </S.Info>
           </S.InfoTextContent>
         </S.Heading>
-        <S.Description
-          data-aos="fade-right"
-          data-aos-duration="600"
-          data-aos-offset="300"
-        >
+        <S.Description data-aos="fade-right" data-aos-duration="600">
           <span>
             Se você busca um acabamento sofisticado em sua contrução, as
             esquadrias de alumínio devem fazer parte do seu projeto, e para
@@ -45,7 +36,6 @@ const Workers = () => {
             alt="Um perfil de uma esquadria cortado ao meio"
             data-aos="fade-up"
             data-aos-duration="500"
-            data-aos-offset="250"
           />
         </S.Description>
       </S.InfoWrapper>
