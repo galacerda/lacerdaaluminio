@@ -55,7 +55,7 @@ export const Heading = styled.div`
   }
 `;
 
-export const Info = styled.span<InfoProps>`
+export const Info = styled.h1<InfoProps>`
   ${({ fontWeight }) => css`
     font-weight: ${fontWeight || "400"};
   `}

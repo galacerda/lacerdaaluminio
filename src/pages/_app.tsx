@@ -18,6 +18,7 @@ function MyApp({ Component, pageProps }) {
           name="description"
           content="Lacerda Alumínio - Especialista em produção e instalação de esquadrias de alumínio"
         />
+        <meta name="google-site-verification" content="T8wuSzv9TJFYVIGDzebdc9UJr058A1UG1JwZNvgBOiU" />
       </Head>
       <GlobalStyles />
       <Component {...pageProps} />
