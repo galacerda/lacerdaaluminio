@@ -17,10 +17,14 @@ const Workers = () => {
       <S.InfoWrapper>
         <S.Heading>
           <S.InfoTextContent>
-            <S.Info>Nossa especialidade é...</S.Info>
-            <S.Info fontWeight={700} data-aos="fade-up" data-aos-duration="700">
+            <S.Subtitle>Nossa especialidade é...</S.Subtitle>
+            <S.Title
+              fontWeight={700}
+              data-aos="fade-up"
+              data-aos-duration="700"
+            >
               ESQUADRIAS DE ALUMÍNIO
-            </S.Info>
+            </S.Title>
           </S.InfoTextContent>
         </S.Heading>
         <S.Description data-aos="fade-right" data-aos-duration="600">

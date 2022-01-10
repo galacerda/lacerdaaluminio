@@ -87,9 +87,9 @@ export default function Home() {
       </S.MoreAbout>
       <OurServices />
       <Gallery />
-      <SectionImage img="/img/yellowBg.svg" fixed />
+      <SectionImage img="/img/yellowBg.svg" />
       <WhoAreUs />
-      <SectionImage img={solding} fixed />
+      <SectionImage img={solding} />
       <BudgetForm />
       <Footer />
     </S.Wrapper>

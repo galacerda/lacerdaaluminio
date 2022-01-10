@@ -55,7 +55,17 @@ export const Heading = styled.div`
   }
 `;
 
-export const Info = styled.h1<InfoProps>`
+export const Title = styled.h1<InfoProps>`
+  ${({ fontWeight }) => css`
+    font-weight: ${fontWeight || "400"};
+  `}
+  font-size: 3rem;
+  ${media.lessThan("medium")`
+    font-size: 2rem;
+  `}
+`;
+
+export const Subtitle = styled.h2<InfoProps>`
   ${({ fontWeight }) => css`
     font-weight: ${fontWeight || "400"};
   `}

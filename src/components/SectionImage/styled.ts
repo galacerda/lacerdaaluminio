@@ -8,7 +8,7 @@ export const SectionImage = styled.div`
     background-position: right;
     background-size: cover;
 
-    ${({ fixed }) => fixed && "background-attachment: fixed"};
+    ${fixed && "background-attachment: fixed"};
 
     height: 60vh;
   `}
