@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { defaultTheme } from "../../styles/defaultTheme";
 import media, { DefaultBreakpoints } from "styled-media-query";
 
 export const Wrapper = styled.section`
@@ -17,15 +16,15 @@ export const Content = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 5rem;
-  h1 {
+  p {
     width: 50%;
-    font-weight: 500;
+    font-weight: 400;
     margin-right: 5rem;
     font-size: 1.8rem;
   }
   ${media.lessThan("medium")`
       flex-direction:column;
-      h1 {
+      p {
         width: 100%;
       }
   `}

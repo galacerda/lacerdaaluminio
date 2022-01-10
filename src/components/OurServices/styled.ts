@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import media, { DefaultBreakpoints } from "styled-media-query";
 
-export const Wrapper = styled.main`
+export const Wrapper = styled.section`
   padding: 5rem 23rem;
   ${media.lessThan("1336px" as keyof DefaultBreakpoints)`
     padding: 5rem 5rem;

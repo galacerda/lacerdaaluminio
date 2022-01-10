@@ -56,12 +56,12 @@ const BudgetForm = () => {
     <S.Wrapper id="budget-form">
       <Heading lineLeft>Solicite um orçamento</Heading>
       <S.Content>
-        <h1>
+        <p>
           Solicite aqui um orçamento. Nossa equipe irá entrar em contato com
           você para prosseguir com o atendimento. Portanto, insira dados reais
           de contato. Caso queira fazer contato diretamente com um atendente,
           mande uma mensagem no WhatsApp!
-        </h1>
+        </p>
         <S.Form onSubmit={handleSubmit(onSubmit)}>
           <span>Preencha todos os campos</span>
           <Controller

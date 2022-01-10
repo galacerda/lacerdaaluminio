@@ -7,7 +7,7 @@ const wrapperModifiers = {
   `,
 };
 
-export const Wrapper = styled.section`
+export const Wrapper = styled.div`
   ${({ darkDots }) => css`
     .slick-dots {
       list-style: none;

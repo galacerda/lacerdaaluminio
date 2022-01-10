@@ -115,7 +115,7 @@ export const MoreAbout = styled.div`
   text-align:center;
 `;
 
-export const ButtonWrapper = styled.div`
+export const ButtonWrapper = styled.nav`
   width: 100%;
   display: flex;
   align-items: center;

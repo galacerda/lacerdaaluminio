@@ -6,7 +6,7 @@ type InfoProps = {
   fontWeight: number;
 };
 
-export const Wrapper = styled.main`
+export const Wrapper = styled.section`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 8rem;
