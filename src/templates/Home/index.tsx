@@ -25,7 +25,7 @@ const settings = {
   cssEase: "linear",
 };
 
-const solding = "/img/solding.png";
+const solding = "/img/solding.webp";
 
 const mailIcon = "/img/mailIcon.svg";
 const phoneIcon = "/img/phoneIcon.svg";

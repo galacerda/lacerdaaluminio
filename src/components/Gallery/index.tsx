@@ -30,8 +30,8 @@ const settingsMobile = {
   cssEase: "linear",
 };
 
-const image1 = "/img/1.png";
-const image2 = "/img/2.jpg";
+const image1 = "/img/1.webp";
+const image2 = "/img/2.webp";
 
 const Gallery = () => {
   const imagesGallery = [image1, image2];

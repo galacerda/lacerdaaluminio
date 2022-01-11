@@ -3,7 +3,7 @@ import Heading from "../Heading";
 import MediaMatch from "../MediaMatch";
 import "aos/dist/aos.css";
 
-const handshakeImg = "/img/handshake.jpg";
+const handshakeImg = "/img/handshake.webp";
 
 const WhoAreUs = () => {
   return (

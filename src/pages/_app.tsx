@@ -11,8 +11,8 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>Lacerda Alumínio | Esquadrias de Alumínio</title>
-        <link rel="shortcut icon" href="/img/favicon_1.png" />
-        <link rel="apple-touch-icon" href="/img/favicon_1.png" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
