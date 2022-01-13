@@ -3,12 +3,11 @@ import { GA_TRACKING_ID } from "../../../public/lib/gtag";
 
 const Analytics = () => (
   <>
-    <Script
-      strategy="afterInteractive"
+    <script
+      async
       src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
     />
-    <Script
-      strategy="afterInteractive"
+    <script
       dangerouslySetInnerHTML={{
         __html: `
             window.dataLayer = window.dataLayer || [];
