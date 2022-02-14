@@ -7,6 +7,7 @@ import AOS from "aos";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
+  const canonicalUrl = "https://www.lacerdaaluminio.com.br/";
 
   useEffect(() => {
     const handleRouteChange = (url) => {
@@ -28,6 +29,7 @@ function MyApp({ Component, pageProps }) {
         <title>Lacerda Alumínio | Esquadrias de Alumínio</title>
         <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
+        <link rel="canonical" href={canonicalUrl} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
