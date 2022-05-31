@@ -2,11 +2,14 @@ import * as S from "./styled";
 
 type SectionImage = {
   img: string;
-  fixed: boolean;
 };
 
-const SectionImage = ({ img, fixed = false }: SectionImage) => {
-  <S.SectionImage image={img} fixed={fixed} />;
+const SectionImage = ({ img }: SectionImage) => {
+  return (
+    <S.Section>
+      <img src={img} />
+    </S.Section>
+  );
 };
 
 export default SectionImage;

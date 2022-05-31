@@ -1,15 +1,12 @@
-import styled, { css } from "styled-components";
-import media from "styled-media-query";
+import styled from "styled-components";
 
-export const SectionImage = styled.div`
-  ${({ img, fixed }) => css`
-    background-image: url(${img});
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: cover;
-
-    ${fixed && "background-attachment: fixed"};
-
-    height: 60vh;
-  `}
+export const Section = styled.section`
+  width: 100%;
+  height: 60vh;
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
 `;

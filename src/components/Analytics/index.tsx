@@ -1,4 +1,3 @@
-import Script from "next/script";
 import { GA_TRACKING_ID } from "../../../public/lib/gtag";
 
 const Analytics = () => (

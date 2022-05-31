@@ -3,8 +3,6 @@ import media from "styled-media-query";
 import { Mail } from "@styled-icons/entypo/Mail";
 import { defaultTheme } from "../../styles/defaultTheme";
 
-const houseBg = "/img/houseBg.svg";
-
 export const Wrapper = styled.div``;
 
 export const HeaderContact = styled.div`
@@ -62,9 +60,13 @@ export const WrapperLogo = styled.div`
 export const HeaderCarousel = styled.div`
   display: flex;
   flex-direction: column;
-  background-image: url(${houseBg});
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
   height: 65vh;
 `;
 
@@ -90,7 +92,6 @@ export const BudgetWrapper = styled.div`
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-
   span {
     color: white;
     font-size: 2rem;
@@ -116,6 +117,8 @@ export const MoreAbout = styled.div`
 `;
 
 export const ButtonWrapper = styled.nav`
+  position: absolute;
+  bottom: 0;
   width: 100%;
   display: flex;
   align-items: center;

@@ -24,7 +24,6 @@ export const Heading = styled.h2`
   ${({ lineLeft, lineBottom }) => css`
     ${lineLeft && headingModifiers.lineLeft}
     ${lineBottom && headingModifiers.lineBottom}
-  
     font-size:2rem;
   `}
 `;
