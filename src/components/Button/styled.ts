@@ -15,7 +15,7 @@ export const Button = styled.button<ButtonProps>`
     border-radius: ${borderRadius};
     background-color: ${defaultTheme.colors[bgColor]};
     border: none;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: ${fontWeight};
     color: ${defaultTheme.colors.white};
     cursor: pointer;
