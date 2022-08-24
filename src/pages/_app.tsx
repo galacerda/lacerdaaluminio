@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
-          content="Lacerda Alumínio - Especialista em produção e instalação de esquadrias de alumínio. Solicite um orçamento!"
+          content="Lacerda Alumínio - Especialista em produção e instalação de esquadrias de alumínio localizada em Pirassununga. Solicite um orçamento!"
         />
         <meta
           name="google-site-verification"
