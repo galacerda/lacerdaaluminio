@@ -54,7 +54,7 @@ const BudgetForm = () => {
   };
   return (
     <S.Wrapper id="budget-form">
-      <Heading lineLeft>Solicite um orçamento</Heading>
+      {/* <Heading lineLeft>Solicite um orçamento</Heading> */}
       <S.Content>
         <p>
           Solicite aqui um orçamento. Nossa equipe irá entrar em contato com

@@ -98,6 +98,7 @@ export const Description = styled.div`
   `}
   }
   span {
+    font-size: 1.6rem;
     ${media.lessThan("medium")`
     font-size: 1.6rem;
   `}

@@ -12,7 +12,6 @@ import Footer from "../../components/Footer";
 import WhatsAppLink from "../../components/WhatsAppLink";
 import Gallery from "../../components/Gallery";
 
-
 const houseBg = "/img/houseBg.svg";
 
 const settings = {
@@ -90,13 +89,14 @@ export default function Home() {
       <main>
         <Workers />
         <S.MoreAbout>
-          <Heading lineBottom>Saiba mais sobre a nossa empresa</Heading>
+          <Heading lineBottom>Solicite um orçamento</Heading>
         </S.MoreAbout>
+        {/* 
         <OurServices />
         <Gallery />
         <SectionImage img="/img/yellowBg.svg" />
         <WhoAreUs />
-        <SectionImage img={solding} />
+        <SectionImage img={solding} /> */}
         <BudgetForm />
       </main>
       <Footer />

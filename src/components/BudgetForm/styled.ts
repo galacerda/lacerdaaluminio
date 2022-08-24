@@ -8,19 +8,18 @@ export const Wrapper = styled.section`
   `}
 
   ${media.lessThan("medium")`
-     padding: 5rem 3rem;
+     padding: 2rem 3rem;
   `}
 `;
 
 export const Content = styled.div`
   display: flex;
   justify-content: center;
-  margin-top: 5rem;
   p {
     width: 50%;
     font-weight: 400;
     margin-right: 5rem;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
   ${media.lessThan("medium")`
       flex-direction:column;
