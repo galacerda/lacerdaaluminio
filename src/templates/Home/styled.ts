@@ -21,7 +21,7 @@ export const HeaderContact = styled.div`
     margin-left: 2rem;
   }
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
 
   ${media.lessThan("medium")`
   justify-content:center;
@@ -106,8 +106,11 @@ export const BudgetWrapper = styled.div`
   `}
 `;
 
+export const InfoRight = styled.div`
+  display: flex;
+`;
+
 export const MoreAbout = styled.div`
-  margin-top: 10rem;
   display: flex;
   justify-content: center;
   ${media.lessThan("medium")`

@@ -30,6 +30,7 @@ const solding = "/img/solding.webp";
 
 const mailIcon = "/img/mailIcon.svg";
 const phoneIcon = "/img/phoneIcon.svg";
+const localeIcon = "/img/locale.svg";
 const logo = "/img/logo.svg";
 
 export default function Home() {
@@ -39,16 +40,22 @@ export default function Home() {
         <WhatsAppLink />
         <S.HeaderContact>
           <S.ContactItem>
-            <img src={phoneIcon} alt="Ícone referente a um telefone" />
-            <span>(19) 99441-9605</span>
+            <img src={localeIcon} alt="Ícone referente a um telefone" />
+            <span>Pirassununga - SP</span>
           </S.ContactItem>
-          <S.ContactItem>
-            <img
-              src={mailIcon}
-              alt="Ícone referente a uma carta simbolizando o e-mail"
-            />
-            <span>orçamento.lacerdaaluminio@gmail.com</span>
-          </S.ContactItem>
+          <S.InfoRight>
+            <S.ContactItem>
+              <img src={phoneIcon} alt="Ícone referente a um telefone" />
+              <span>(19) 99441-9605</span>
+            </S.ContactItem>
+            <S.ContactItem>
+              <img
+                src={mailIcon}
+                alt="Ícone referente a uma carta simbolizando o e-mail"
+              />
+              <span>orçamento.lacerdaaluminio@gmail.com</span>
+            </S.ContactItem>
+          </S.InfoRight>
         </S.HeaderContact>
         <S.WrapperLogo>
           <img
@@ -89,7 +96,7 @@ export default function Home() {
       <main>
         <Workers />
         <S.MoreAbout>
-          <Heading lineBottom>Solicite um orçamento</Heading>
+          <Heading lineBottom>Peça seu orçamento</Heading>
         </S.MoreAbout>
         {/* 
         <OurServices />

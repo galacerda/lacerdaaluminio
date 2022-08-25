@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useRouter } from "next/router";
 import GlobalStyles from "../styles/globalStyles";
 import * as gtag from "../../public/lib/gtag";
-import AOS from "aos";
+//import AOS from "aos";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -19,9 +19,9 @@ function MyApp({ Component, pageProps }) {
     };
   }, [router.events]);
 
-  useEffect(() => {
-    AOS.init({});
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({});
+  // }, []);
 
   return (
     <>
