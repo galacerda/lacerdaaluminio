@@ -37,10 +37,8 @@ const Workers = () => {
           {/* <img src={frame} alt="Um perfil de uma esquadria cortado ao meio" /> */}
           <S.List>
             <S.ListItem>Melhores fornecedores</S.ListItem>
-            <S.ListItem>Orçamento em poucas horas</S.ListItem>
             <S.ListItem>Técnicos especiazados</S.ListItem>
             <S.ListItem>Projeto sob medida</S.ListItem>
-            <S.ListItem>Parcelas que cabem no seu bolso</S.ListItem>
           </S.List>
         </S.Description>
       </S.InfoWrapper>
