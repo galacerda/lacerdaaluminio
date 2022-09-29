@@ -10,6 +10,7 @@ export const Wrapper = styled.section`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 8rem;
+  padding: 5rem 23rem;
   ${media.lessThan("medium" as keyof DefaultBreakpoints)`
     display: flex;
     flex-direction:column;
@@ -25,8 +26,6 @@ export const ImageWorker = styled.div`
 `;
 
 export const InfoWrapper = styled.div`
-  max-width: 47%;
-  padding-top: 17rem;
   font-size: 2rem;
   ${media.lessThan("1336px" as keyof DefaultBreakpoints)`
     padding-top: 13rem;
@@ -85,8 +84,7 @@ export const Description = styled.div`
   flex-direction: column;
   justify-content: space-between;
   text-align: justify;
-  align-items: center;
-  img {
+  /* img {
     width: 70%;
     margin-top: 13rem;
     ${media.lessThan("1336px" as keyof DefaultBreakpoints)`
@@ -96,11 +94,69 @@ export const Description = styled.div`
     margin-top: 10rem;
     width: 60%;
   `}
-  }
+  } */
   span {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     ${media.lessThan("medium")`
     font-size: 1.6rem;
   `}
   }
+`;
+
+export const List = styled.ul`
+  padding: 5rem 0 0 3rem;
+  ${media.lessThan("medium")`
+     padding: 3rem 0 0 3rem;
+  `}
+`;
+
+export const ListItem = styled.li`
+  font-size: 1.8rem;
+  ${media.lessThan("medium")`
+      font-size: 1.6rem;
+  `}
+`;
+
+export const ProductsWrapper = styled.div``;
+
+export const ListProducts = styled.ul`
+  list-style: none;
+  ${media.lessThan("medium")`
+    margin-top: 5rem;
+  `}
+`;
+
+export const ProductItem = styled.li`
+  display: flex;
+  height: 10rem;
+  border-radius: 1rem;
+  border: 0.1rem solid #ededed;
+  border-right: 1rem solid ${defaultTheme.colors.orange};
+  margin-bottom: 1.5rem;
+  box-shadow: 0.2rem 0.6rem 0.6rem -0.2rem rgba(0, 0, 0, 0.42);
+  img {
+    border-radius: 1rem 0 0 1rem;
+    height: 100%;
+    width: 11rem;
+    ${media.lessThan("medium")`
+      width: 8rem;
+    `}
+  }
+  span {
+    font-size: 2rem;
+    ${media.lessThan("medium")`
+      font-size: 1.6rem;
+    `}
+  }
+  ${media.lessThan("medium")`
+     height: 8rem;
+  `}
+`;
+
+export const DescriptionProduct = styled.div`
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 `;

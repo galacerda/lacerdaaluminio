@@ -153,7 +153,11 @@ const BudgetForm = () => {
             )}
           />
           <S.ButtonWrapper>
-            <Button text="Solicitar orçamento" type="submit" />
+            <Button
+              text="Solicitar orçamento"
+              type="submit"
+              borderRadius="0.2rem"
+            />
           </S.ButtonWrapper>
         </S.Form>
       </S.Content>

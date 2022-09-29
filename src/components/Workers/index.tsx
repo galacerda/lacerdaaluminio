@@ -3,17 +3,22 @@ import * as S from "./styled";
 
 const worker = "/img/workers.svg";
 const frame = "/img/frame.svg";
+const img1 = "img/esquadria.png";
+const img2 = "img/vidro.jpg";
+const img3 = "img/box.jpg";
+const img4 = "img/guardaCorpo.jpg";
+
 const Workers = () => {
   return (
     <S.Wrapper>
-      <MediaMatch greaterThan="medium">
+      {/* <MediaMatch greaterThan="medium">
         <S.ImageWorker>
           <img
             src={worker}
             alt="Dois trabalhadores segurando uma janela de esquadria de aluminio"
           />
         </S.ImageWorker>
-      </MediaMatch>
+      </MediaMatch> */}
       <S.InfoWrapper>
         <S.Heading>
           <S.InfoTextContent>
@@ -29,9 +34,44 @@ const Workers = () => {
             materiais e profissionais, garantimos a sua satisfação!
           </span>
 
-          <img src={frame} alt="Um perfil de uma esquadria cortado ao meio" />
+          {/* <img src={frame} alt="Um perfil de uma esquadria cortado ao meio" /> */}
+          <S.List>
+            <S.ListItem>Melhores fornecedores</S.ListItem>
+            <S.ListItem>Orçamento em poucas horas</S.ListItem>
+            <S.ListItem>Técnicos especiazados</S.ListItem>
+            <S.ListItem>Projeto sob medida</S.ListItem>
+            <S.ListItem>Parcelas que cabem no seu bolso</S.ListItem>
+          </S.List>
         </S.Description>
       </S.InfoWrapper>
+      <S.ProductsWrapper>
+        <S.ListProducts>
+          <S.ProductItem>
+            <img src={img1} />
+            <S.DescriptionProduct>
+              <span>Esquadrias de alumínio</span>
+            </S.DescriptionProduct>
+          </S.ProductItem>
+          <S.ProductItem>
+            <img src={img2} />
+            <S.DescriptionProduct>
+              <span>Esquadrias com vidro temperado</span>
+            </S.DescriptionProduct>
+          </S.ProductItem>
+          <S.ProductItem>
+            <img src={img3} />
+            <S.DescriptionProduct>
+              <span>Box</span>
+            </S.DescriptionProduct>
+          </S.ProductItem>
+          <S.ProductItem>
+            <img src={img4} />
+            <S.DescriptionProduct>
+              <span>Guarda corpo</span>
+            </S.DescriptionProduct>
+          </S.ProductItem>
+        </S.ListProducts>
+      </S.ProductsWrapper>
     </S.Wrapper>
   );
 };

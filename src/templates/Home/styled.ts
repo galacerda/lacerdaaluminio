@@ -24,7 +24,7 @@ export const HeaderContact = styled.div`
   justify-content: space-between;
 
   ${media.lessThan("medium")`
-  justify-content:center;
+  justify-content:space-between;
   gap:1.5rem;
   padding: 0 1rem;
   span {
@@ -108,6 +108,9 @@ export const BudgetWrapper = styled.div`
 
 export const InfoRight = styled.div`
   display: flex;
+  ${media.lessThan("medium")`
+    flex-direction: column;
+  `}
 `;
 
 export const MoreAbout = styled.div`

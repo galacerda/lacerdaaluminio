@@ -53,7 +53,7 @@ export default function Home() {
                 src={mailIcon}
                 alt="Ícone referente a uma carta simbolizando o e-mail"
               />
-              <span>orçamento.lacerdaaluminio@gmail.com</span>
+              <span>orcamentolacerda.aluminio@gmail.com</span>
             </S.ContactItem>
           </S.InfoRight>
         </S.HeaderContact>
@@ -87,7 +87,11 @@ export default function Home() {
             </S.CarouselWrapper>
             <S.ButtonWrapper>
               <a href="#budget-form">
-                <Button text="Solicite um orçamento" fontWeight="500" />
+                <Button
+                  text="SOLICITE UM ORÇAMENTO"
+                  fontWeight="500"
+                  borderRadius="0.2rem"
+                />
               </a>
             </S.ButtonWrapper>
           </S.HeaderCarousel>
