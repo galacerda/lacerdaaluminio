@@ -145,7 +145,7 @@ export const ProductItem = styled.li`
   span {
     font-size: 2rem;
     ${media.lessThan("medium")`
-      font-size: 1.6rem;
+      font-size: 1.4rem;
     `}
   }
   ${media.lessThan("medium")`
