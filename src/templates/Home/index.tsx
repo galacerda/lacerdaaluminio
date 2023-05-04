@@ -102,12 +102,6 @@ export default function Home() {
         <S.MoreAbout>
           <Heading lineBottom>Peça seu orçamento</Heading>
         </S.MoreAbout>
-        {/* 
-        <OurServices />
-        <Gallery />
-        <SectionImage img="/img/yellowBg.svg" />
-        <WhoAreUs />
-        <SectionImage img={solding} /> */}
         <BudgetForm />
       </main>
       <Footer />
