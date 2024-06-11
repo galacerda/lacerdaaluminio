@@ -6,7 +6,7 @@ type ButtonProps = {
   bgColor?: string;
   bgHover?: string;
   fontWeight?: string;
-  type?: string;
+  type?: "button" | "reset" | "submit";
 };
 
 export default function Button({
