@@ -2,8 +2,8 @@ import styled, { css } from "styled-components";
 import media, { DefaultBreakpoints } from "styled-media-query";
 
 type MediaMatchModifiers = {
-  lessThan: (size: keyof DefaultBreakpoints) => void;
-  greaterThan: (size: keyof DefaultBreakpoints) => void;
+  lessThan: (size: keyof DefaultBreakpoints) => any;
+  greaterThan: (size: keyof DefaultBreakpoints) => any;
 };
 
 const mediaMatchModifiers: MediaMatchModifiers = {
@@ -16,7 +16,7 @@ const mediaMatchModifiers: MediaMatchModifiers = {
   `,
 };
 
-export default styled.div`
+export default styled.div<any>`
   ${({ lessThan, greaterThan }) => css`
     display: none;
 

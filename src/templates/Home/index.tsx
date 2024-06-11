@@ -2,15 +2,11 @@
 import * as S from "./styled";
 import Button from "../../components/Button";
 import Heading from "../../components/Heading";
-import OurServices from "../../components/OurServices/index";
-import SectionImage from "../../components/SectionImage";
-import WhoAreUs from "../../components/WhoAreUs";
 import BudgetForm from "../../components/BudgetForm";
 import Slider from "../../components/Slider";
 import Workers from "../../components/Workers";
 import Footer from "../../components/Footer";
 import WhatsAppLink from "../../components/WhatsAppLink";
-import Gallery from "../../components/Gallery";
 
 const houseBg = "/img/houseBg.svg";
 
@@ -25,8 +21,6 @@ const settings = {
   autoplaySpeed: 3000,
   cssEase: "linear",
 };
-
-const solding = "/img/solding.webp";
 
 const mailIcon = "/img/mailIcon.svg";
 const phoneIcon = "/img/phoneIcon.svg";

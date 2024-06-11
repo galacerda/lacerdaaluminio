@@ -9,29 +9,30 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@hookform/resolvers": "^2.8.4",
-    "@material-ui/core": "^4.12.3",
-    "@material-ui/icons": "^4.11.2",
-    "@material-ui/lab": "^4.0.0-alpha.60",
-    "@material-ui/styles": "^4.11.4",
-    "@sendgrid/mail": "^7.6.0",
-    "@types/react-slick": "^0.23.7",
+    "@hookform/resolvers": "^3.6.0",
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
+    "@material-ui/lab": "^4.0.0-alpha.61",
+    "@material-ui/styles": "^4.11.5",
+    "@sendgrid/mail": "^8.1.3",
+    "@types/react-slick": "^0.23.13",
     "aos": "^3.0.0-beta.6",
-    "next": "11.0.1",
-    "nodemailer": "^6.7.2",
-    "polished": "^4.1.3",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-hook-form": "^7.20.5",
+    "next": "14.2.3",
+    "nodemailer": "^6.9.13",
+    "polished": "^4.3.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-hook-form": "^7.51.5",
     "react-input-mask": "^2.0.4",
-    "react-slick": "^0.28.1",
-    "styled-components": "^5.3.0",
-    "styled-icons": "^10.37.0",
+    "react-slick": "^0.30.2",
+    "styled-components": "^6.1.11",
+    "styled-icons": "^10.47.1",
     "styled-media-query": "^2.1.2",
-    "yup": "^0.32.11"
+    "yup": "^1.4.0"
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.13.2",
-    "typescript": "^4.5.2"
+    "@types/node": "20.14.2",
+    "babel-plugin-styled-components": "^2.1.4",
+    "typescript": "^5.4.5"
   }
 }
